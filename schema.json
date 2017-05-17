@@ -1,0 +1,34 @@
+{
+  "definitions": {
+    "social-account": {
+      "title": "social-account",
+      "$id": "#/definitions/social-account",
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "network": {
+          "type": "string",
+          "description": "e.g. Facebook or Twitter"
+        },
+        "username": {
+          "type": "string",
+          "description": "e.g. iravagecoins"
+        },
+        "url": {
+          "type": "string",
+          "description": "e.g. http://twitter.com/iravagecoins",
+          "format": "uri"
+        }
+      }
+    }
+  },
+  "additionalItems": false,
+  "items": {
+    "$ref": "#/definitions/social-account"
+  },
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "title": "social-accounts",
+  "$id": "https://iramiller.com/code/schema-social-accounts/schema.json#",
+  "description": "A list of social media accounts for a person or entity."
+}
